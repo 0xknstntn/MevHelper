@@ -1,0 +1,16 @@
+[profile.default]
+solc_version = '0.7.5'
+src = 'src'
+out = 'out'
+auto_detect_solc = false
+optimizer = true
+optimizer_runs = 200 # Default amount
+ffi = true
+fuzz_runs = 1_000
+#libs = ['lib']
+remappings = [
+        "v3-core=lib/v3-core/",
+]
+
+[rpc_endpoints]
+local="http://127.0.0.1:8545"
